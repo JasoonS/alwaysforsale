@@ -1,68 +1,98 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# This ad space is 'always for sale'
 
-## Available Scripts
+Welcome to the world of always for sale advertising space! Putting a new a spin on advertising.
 
-In the project directory, you can run:
+Simply visit alwaysforsale.io and buy any ad space in a matter of seconds. 
 
-### `npm start`
+The ad space is an asset, so if someone buys it from you - you can even profit!
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Team Members
+[Denham](https://github.com/DenhamPreen) & 
+[Jonjon](http://github.com/moose-code) & 
+[Jason](https://github.com/JasoonS) 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+### How it works
+1. Log onto our website and a grid showing all 3 advertising blocks will be displayed.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. All 3 of these blocks will be always on sale… forever.
 
-### `npm run build`
+3. Simply click buy on the block you would like to purchase (you will need metamask and small amount of ether):
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Set the the selling price for your block (this allows our blocks to be always for sale. If you set the selling price at say 2 ETH, you will receive 2 ETH if someone buys this block from you - making money while advertising, pretty neat right?)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+5. Add a deposit in ETH to pay for owning the space. If you set the selling price at 2 ETH, you will have to pay 2 ETH per month in order to keep this ad space. (The funds generated from this project are going towards funding our wildcards project which in turn funds conservation. We got into a 6 month Paris blockchain incubator, but we need to self fund.)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. Now you own the block congrats! If you refresh the page you will be allowed to upload a logo of your company and add your website link. Anyone who visits the webpage will now see you company displayed in that block, until someone buys that block from you, or your deposit runs out.
 
-### `npm run eject`
+### Tech
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+TODO
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Steward.sol
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+TODO
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm run chain`  
+then
+`truffle test`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The Gas Reporter is disable (since it is slower). Enable gas reporter in truffle config to check.
 
-### Code Splitting
+The test may sometimes fail due to split-second changes in when the test is run due to patronage incrementing per second.
+Just re-run.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+NOTE: It costs ~$0.12 tx fee at 5 gwei gas price & 133 usd/eth to buy. 
 
-### Analyzing the Bundle Size
+### Front-End
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+TODO
 
-### Making a Progressive Web App
+### Running 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+After installing packages, main directory:
 
-### Advanced Configuration
+`npm run chain`  
+or  
+`npm run moving_chain`  
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+This creates a local ganache-cli instance. The latter includes auto-mining of blocks to showcase the patronage owed increasing on the front-end.
 
-### Deployment
+`truffle migrate`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+This deploys the ERC721-artwork/nft & the Rhino.
 
-### `npm run build` fails to minify
+`cd app`  
+`npm run start`  
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### This is originally inspired by Simon
+
+https://github.com/simondlr/thisartworkisalwaysonsale
+
+
+### More about us
+
+About our always for sale adspace
+This project was created at the #ETHIndia2019 hackathon. The purpose of the project is two fold:
+
+1. To generate funds for wildlife conservation. How? We created a project called wildcards.world at the #ETHCapeTown2019 hackathon to raise funds for wildlife conservation. Subsequently, we were accepted into a 6 month blockchain incubator in Paris to accelerate the developement of this platform. The funds generated from our #ETHIndia 'always for sale adspace' will provide funding for us to develop our wildcards project and hence raise funds for conservation efforts.
+
+2. This project is a continued social experiment to understand how always for sale adspace might behave in a viral marketplace. Many of you may be familiar with the milliondollarhomepage and how this simple project sold a million pixels at a dollar each. This rather aims at scarcity and introduces a very interesting concept where each piece of marketing real estate will be always for sale, forever.
+
+The success of this project will allow us to provide always for sale plugin marketing solutions to other companies and continue to fund the developement of wildcards - the exploration of sustainable solutions using an always for sale mechanic.
+
+Join our telegram - https://t.me/wildcardsworld
+Email us to chat: jonjon@wildcards.world
+
+Version: 1.0.1
+
+### This is originally inspired by Simon
+
+
+### License
+
+Code License:
+MIT
